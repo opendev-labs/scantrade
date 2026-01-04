@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk & Governance - Governed Trading System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #060809;
+            color: #f8fafc;
+        }
+
+        .glass {
+            background: rgba(16, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .active-link {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 glass border-b border-slate-800 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <svg width="32" height="32" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="180" height="180" rx="40" fill="#060809" />
+                    <path d="M90 45L135 65V105C135 132.614 115.82 153.228 90 160C64.1802 153.228 45 105V65L90 45Z"
+                        stroke="#3b82f6" stroke-width="8" fill="#3b82f6" fill-opacity="0.1" />
+                </svg>
+                <span class="font-bold text-lg hidden sm:inline">Governed Trading</span>
+            </a>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="technical.html" class="nav-link py-1">Technical</a>
+                <a href="governance.html" class="nav-link active-link py-1">Governance</a>
+                <a href="strategies.html" class="nav-link py-1">Strategies</a>
+                <a href="verification.html" class="nav-link py-1">Verification</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-6 md:p-12">
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold mb-4">Risk & <span class="gradient-text">Governance</span></h1>
+            <p class="text-slate-400">Understanding the safety layers and health score algorithms.</p>
+        </header>
+
+        <section class="space-y-12">
+            <!-- Health Score -->
+            <div class="glass p-8 rounded-2xl glow-intense">
+                <h2 class="text-2xl font-bold mb-6 text-emerald-400">System Health Score</h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
+                    The System Health Score is a real-time metric (0-100) that governs the operational state of the
+                    entire platform. It is calculated using a multi-factor weighted formula:
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                        <div class="text-xs text-slate-500 mb-1">Drawdown (40%)</div>
+                        <div class="text-xl font-bold text-blue-400">Current DD %</div>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                        <div class="text-xs text-slate-500 mb-1">Exposure (30%)</div>
+                        <div class="text-xl font-bold text-blue-400">Portfolio %</div>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                        <div class="text-xs text-slate-500 mb-1">Performance (20%)</div>
+                        <div class="text-xl font-bold text-blue-400">Win Rate</div>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 p-6 rounded-xl border border-emerald-500/20">
+                    <h3 class="font-bold text-emerald-300 mb-2">Governance Action Levels</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                            <strong>80-100 (Optimal):</strong> Full execution permitted.</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                            <strong>60-79 (Caution):</strong> New position sizing reduced by 50%.</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-rose-400"></span>
+                            <strong>
+                                < 40 (Critical):</strong> Trading Auto-Paused. All open signals cancelled.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Risk Limits -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold">Hard Risk Limits</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-800">
+                                <th class="py-4 font-bold text-slate-400">Parameter</th>
+                                <th class="py-4 font-bold text-slate-400">Limit</th>
+                                <th class="py-4 font-bold text-slate-400">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-slate-800/50">
+                                <td class="py-4 font-mono text-blue-300">Max Position Size</td>
+                                <td class="py-4 font-bold">5%</td>
+                                <td class="py-4 text-slate-400">Maximum allocation per single trade.</td>
+                            </tr>
+                            <tr class="border-b border-slate-800/50">
+                                <td class="py-4 font-mono text-purple-300">Max Portfolio Exposure</td>
+                                <td class="py-4 font-bold">20%</td>
+                                <td class="py-4 text-slate-400">Maximum total capital deployed at any time.</td>
+                            </tr>
+                            <tr class="border-b border-slate-800/50">
+                                <td class="py-4 font-mono text-emerald-300">Max Drawdown</td>
+                                <td class="py-4 font-bold">10%</td>
+                                <td class="py-4 text-slate-400">Daily drawdown circuit breaker.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Circuit Breakers -->
+            <div class="bg-rose-950/20 border border-rose-500/30 p-8 rounded-2xl">
+                <h2 class="text-xl font-bold mb-4 text-rose-400 flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    Automated Circuit Breakers
+                </h2>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    In the event of high market volatility where correlation between assets exceeds 0.85, the system
+                    automatically triggers a <strong>Correlation Squeeze Pause</strong>, restricting new trades until
+                    divergence is detected. This prevents heavy losses during systemic market crashes.
+                </p>
+                <div class="flex gap-4">
+                    <span
+                        class="px-3 py-1 bg-rose-500/10 text-rose-400 text-xs font-bold rounded-full border border-rose-500/30 font-mono">Uncertainty
+                        Detection ACTIVE</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-24 pt-8 border-t border-slate-800 flex justify-between items-center text-sm text-slate-500">
+            <p>© 2026 Governed Trading System.</p>
+            <div class="flex gap-6">
+                <a href="https://github.com/opendev-labs/governed-trading-system" class="hover:text-white">GitHub</a>
+                <a href="index.html" class="hover:text-white">Index</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
