@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { BarChart3, TrendingUp, Zap, Settings, Activity, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
