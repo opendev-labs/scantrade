@@ -38,8 +38,8 @@ export default function MasterHub() {
                     <div className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                         <div className="relative flex flex-col bg-black px-3 sm:px-4 py-1.5 rounded-lg border border-white/10">
-                            <span className="text-[8px] sm:text-[9px] font-black text-emerald-400 tracking-[0.2em] sm:tracking-[0.3em] uppercase leading-tight">Institutional Access</span>
-                            <span className="text-lg sm:text-xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 italic">MASTER HUB</span>
+                            <span className="text-[8px] sm:text-[9px] font-black text-emerald-400 tracking-[0.2em] sm:tracking-[0.3em] uppercase leading-tight">Trader Access</span>
+                            <span className="text-lg sm:text-xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500 italic">SCANTRADE</span>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@ export default function MasterHub() {
                     <div className="absolute top-4 left-6 z-10 flex items-center gap-3">
                         <div className="bg-black/80 backdrop-blur-md border border-emerald-500/20 px-3 py-1.5 rounded-md flex items-center gap-2 shadow-2xl">
                             <LayoutDashboard className="w-3 h-3 text-emerald-400" />
-                            <span className="text-[9px] font-black text-white/90 uppercase tracking-widest">Global Intelligence Loop</span>
+                            <span className="text-[9px] font-black text-white/90 uppercase tracking-widest">Market Screeners</span>
                         </div>
                     </div>
                     <div className="w-full h-full p-2">
@@ -124,8 +124,8 @@ export default function MasterHub() {
                                 <BarChart3 className="w-4 h-4 text-emerald-400" />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white/60">Execution Terminal</span>
-                                <span className="text-sm font-bold tracking-tight">Active Ledger</span>
+                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white/60">Signals</span>
+                                <span className="text-sm font-bold tracking-tight">Active Log</span>
                             </div>
                         </div>
                         <div className="flex items-center gap-2 px-2 py-1 rounded bg-white/5 border border-white/10">
@@ -145,7 +145,7 @@ export default function MasterHub() {
 
                     {/* Footer Stats */}
                     <div className="px-6 sm:px-8 py-3 border-t border-white/5 bg-black/40 flex items-center justify-between text-[8px] font-mono text-white/20 tracking-tighter">
-                        <span>LAKHAN_BHAI_INSTITUTIONAL_V1.1_MOBILE</span>
+                        <span>SCANTRADE_V1.1_MOBILE</span>
                         <span className="hidden sm:inline">LATENCY: 12MS</span>
                     </div>
                 </div>

@@ -1,83 +1,101 @@
-# Governed Trading System
+# ScanTrade 📊
 
-![Governed Trading Banner](https://governed-trading-system.vercel.app/icon.svg)
-
-**Institutional-grade algorithmic trading platform with multi-layer governance, real-time market scanners, and automated execution agents.**
+**Simple market screeners with smart alerts — built for traders, not institutions.**
 
 ---
 
-## 🏛️ Project Overview
+## 🔍 What is ScanTrade?
 
-The **Governed Trading System** is a high-performance, semi-automated trading environment designed for institutional-level market simulation and paper trading. Built with a decoupled architecture (FastAPI + Next.js), it prioritizes safety through a proprietary **System Health Score** governance model.
+**ScanTrade** is a lightweight trading screener system that helps you **spot market opportunities faster** using structured scans, clean logic, and optional automation.
 
-### 🛡️ Core Governance
-- **Hard Risk Limits**: Multi-layer constraints on drawdown, exposure, and position sizing.
-- **Health-Based Execution**: Automated pause/resume of bots based on trailing performance metrics.
-- **Circuit Breakers**: Correlation-based halts during systemic market volatility.
+It combines:
 
-### 🔍 Market Intelligence
-- **Scanners**: 5 core engines (Trend Alignment, Volatility Compression, Volume Profile, etc.).
-- **Signal Logic**: AI-enhanced signal detection with real-time confidence scores.
-- **Execution**: Modular bot system implementing institutional strategies (VWAP Reversion, Momentum Scalping).
+* TradingView-based screening
+* Google Sheets logic & filters
+* Real-time alerts (Discord-ready)
+* A clean web interface for daily use
 
----
-
-## 🏗️ Technical Architecture
-
-```mermaid
-graph TD
-    A[Market Data] --> B[Indications Engine]
-    B --> C[Scanners]
-    C --> D[Governance Engine]
-    D --> E[Trading Bots]
-    E --> F[Execution Logs]
-    D -.->|Health Score| E
-```
-
-- **Backend**: Python 3.10+, FastAPI, SQLAlchemy, yfinance.
-- **Frontend**: Next.js 14, React 18, Tailwind CSS, Shadcn UI, Sonner.
-- **Database**: SQLite (Production-ready simulation state).
+No complexity. No black boxes. Just **clear signals**.
 
 ---
 
-## 🚀 Quick Start
+## ⚙️ What ScanTrade Does
 
-### 1. Backend Setup
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python main.py
-```
+### 📈 Market Screeners
 
-### 2. Frontend Setup
-```bash
-npm install
-npm run dev
-```
+ScanTrade continuously checks markets for:
+
+* Trend alignment
+* Volume expansion
+* Volatility contraction
+* Breakout and reversal setups
+* Custom logic you define
+
+You decide **what matters** — ScanTrade just scans.
 
 ---
 
-## 📚 Documentation Suite
+### 🔔 Alerts & Notifications
 
-Explore our professional documentation hosted on GitHub Pages:
+* Discord alerts (primary)
+* Clean signal messages
+* No over-trading spam
+* Human-readable output
 
-- 📖 **[Documentation Hub](https://opendev-labs.github.io/governed-trading-system/)**
-- ⚙️ **[Technical Architecture](https://opendev-labs.github.io/governed-trading-system/technical.html)**
-- 🔒 **[Governance & Risk](https://opendev-labs.github.io/governed-trading-system/governance.html)**
-- 📊 **[Trading Strategies](https://opendev-labs.github.io/governed-trading-system/strategies.html)**
-- ✅ **[Compliance Audit](https://opendev-labs.github.io/governed-trading-system/verification.html)**
-
----
-
-## 🏆 Final Verification
-
-The system has been rigorously tested against Lakhan Bhai's Institutional Requirements.
-
-**Status: 100% COMPLIANT**  
-**Verdict: PASSED WITH DISTINCTION**
+Designed to fit naturally into a **Discord trading workflow**.
 
 ---
 
-© 2026 Governed Trading System. Licensed under MIT.
+### 🧠 Smart Logic (Not Blind Bots)
+
+ScanTrade does **not** place real trades.
+
+Instead, it:
+
+* Highlights high-probability setups
+* Lets *you* decide the execution
+* Supports paper trading and simulation
+
+This keeps the system **safe, transparent, and controllable**.
+
+---
+
+## 🧩 How It’s Built (High Level)
+
+* **Data Sources**: TradingView, public market feeds
+* **Logic Layer**: Sheet-based + code-based rules
+* **Frontend**: Clean web UI (Vercel)
+* **Alerts**: Discord bot integration
+* **Storage**: Simple logs for tracking signals
+
+Lightweight by design. Easy to extend.
+
+---
+
+## 🚀 Who Is ScanTrade For?
+
+* Retail traders
+* Swing & intraday traders
+* Traders who want **alerts, not noise**
+* Developers building their own logic
+* Anyone who prefers **simple tools that work**
+
+---
+
+## 🛡️ Philosophy
+
+> ScanTrade scans.
+> You trade.
+
+No hidden execution.
+No forced strategies.
+No unnecessary complexity.
+
+---
+
+## 🌐 Project
+
+* Website: **scantrade.vercel.app**
+* Bot: **ScanTrade (Discord)**
+* Status: Active Development
+* License: MIT

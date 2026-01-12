@@ -48,8 +48,8 @@ async def lifespan(app: FastAPI):
 
 # Create FastAPI app
 app = FastAPI(
-    title="Governed Trading System API",
-    description="Backend API for the governed trading system",
+    title="ScanTrade API",
+    description="Backend API for ScanTrade market screeners",
     version="1.0.0",
     lifespan=lifespan
 )

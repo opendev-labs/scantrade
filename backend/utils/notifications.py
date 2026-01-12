@@ -53,16 +53,15 @@ class NotificationManager:
         price = signal_data.get('price')
         condition = signal_data.get('condition')
 
-        # Institutional formatting for Lakhan Bhai
+        # ScanTrade formatting
         emoji = "🚀" if sig_type == "BULLISH" else "🔻"
         message = (
-            f"*INSTITUTIONAL SIGNAL DETECTED* {emoji}\n\n"
-            f"*ASSET:* {symbol}\n"
-            f"*ACTION:* {sig_type}\n"
-            f"*PRICE:* ${price:,.2f}\n"
-            f"*CONFIDENCE:* {confidence}%\n"
-            f"*REASON:* {condition}\n\n"
-            f"--- Governed Trading Intelligence ---"
+            f"**SCANTRADE SIGNAL** {emoji}\n\n"
+            f"**{symbol}** • {sig_type}\n"
+            f"Price: ${price:,.2f}\n"
+            f"Confidence: {confidence}%\n"
+            f"Setup: {condition}\n\n"
+            f"_ScanTrade Scanner_"
         )
         
         # Simple text for Discord

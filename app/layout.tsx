@@ -7,15 +7,15 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Governed Trading System | Institutional Grade',
-  description: 'Professional algorithmic trading platform with multi-layer governance, real-time market scanners, and automated execution agents.',
+  title: 'ScanTrade | Simple Market Screeners',
+  description: 'Lightweight trading screener system with smart alerts. Built for traders, not institutions.',
   keywords: ['trading', 'algorithmic trading', 'fintech', 'governance', 'market scanners'],
   metadataBase: new URL('https://governed-trading-system.vercel.app'),
   openGraph: {
-    title: 'Governed Trading System | Institutional Grade',
-    description: 'Professional algorithmic trading platform with multi-layer governance and real-time market scanners.',
+    title: 'ScanTrade | Simple Market Screeners',
+    description: 'Lightweight trading screener system with smart alerts.',
     url: 'https://governed-trading-system.vercel.app',
-    siteName: 'Governed Trading System',
+    siteName: 'ScanTrade',
     images: [
       {
         url: '/icon.svg',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Governed Trading System',
-    description: 'Professional algorithmic trading platform with multi-layer governance.',
+    title: 'ScanTrade',
+    description: 'Lightweight trading screener system.',
     images: ['/icon.svg'],
   },
   icons: {
