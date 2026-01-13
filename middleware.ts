@@ -8,10 +8,15 @@ export default withAuth({
 
 export const config = {
     matcher: [
-        "/master/:path*",
-        "/screeners/:path*",
-        "/leo/:path*",
-        "/google-sheets/:path*",
-        "/discord/:path*",
+        /*
+         * Match all request paths except for the ones starting with:
+         * - api/auth (NextAuth routes)
+         * - _next/static (static files)
+         * - _next/image (image optimization files)
+         * - favicon.ico (favicon file)
+         * - public assets
+         * - landing page (/)
+         */
+        "/((?!api/auth|_next/static|_next/image|favicon.ico|api/leo|api/interactions|logo_transparent.png|$).*)",
     ],
 };
