@@ -8,11 +8,11 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: "Home", href: "/", icon: "🏠" },
-    { label: "Screeners", href: "/screeners", icon: "🔍" },
-    { label: "Discord", href: "/discord", icon: "💬" },
-    { label: "Sheets", href: "/google-sheets", icon: "📊" },
-    { label: "Pricing", href: "/pricing", icon: "💰" },
+    { label: "Home", href: "https://opendev-labs.github.io/scantrade/", icon: "🏠" },
+    { label: "Screeners", href: "https://opendev-labs.github.io/scantrade/screeners", icon: "🔍" },
+    { label: "Discord", href: "https://opendev-labs.github.io/scantrade/discord", icon: "💬" },
+    { label: "Sheets", href: "https://opendev-labs.github.io/scantrade/google-sheets", icon: "📊" },
+    { label: "Pricing", href: "https://opendev-labs.github.io/scantrade/pricing", icon: "💰" },
     { label: "Master", href: "https://scantrade.vercel.app/master", icon: "🔐" },
   ]
 
