@@ -82,9 +82,15 @@ export default function DiscordPage() {
                     </div>
                 </div>
 
-                <Button size="lg" className="bg-[#5865F2] hover:bg-[#4752c4] text-white font-bold h-12 px-8">
-                    Add Bot to Server
-                </Button>
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1460333588431114301&permissions=2147483648&scope=bot%20applications.commands"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Button size="lg" className="bg-[#5865F2] hover:bg-[#4752c4] text-white font-bold h-12 px-8">
+                        Add Bot to Server
+                    </Button>
+                </a>
                 <p className="text-xs text-white/30 mt-4">
                     Requires 'Manage Webhooks' permission.
                 </p>
