@@ -48,8 +48,8 @@ export const authOptions: NextAuthOptions = {
         },
     },
     pages: {
-        signIn: "/auth/signin",
-        error: "/auth/signin", // Error code passed in query string as ?error=
+        signIn: "/signin",
+        error: "/signin", // Error code passed in query string as ?error=
     },
     session: {
         strategy: "jwt",

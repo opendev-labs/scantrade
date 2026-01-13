@@ -53,7 +53,7 @@ export default function SignIn() {
 
     const handleGitHubSignIn = () => {
         if (isStatic) {
-            window.location.href = "https://scantrade.vercel.app/auth/signin";
+            window.location.href = "https://scantrade.vercel.app/signin";
             return;
         }
         signIn("github", { callbackUrl });
@@ -112,7 +112,7 @@ export default function SignIn() {
                             </div>
 
                             <button
-                                onClick={() => window.location.href = "https://scantrade.vercel.app/auth/signin"}
+                                onClick={() => window.location.href = "https://scantrade.vercel.app/signin"}
                                 className="w-full bg-primary hover:bg-[#FF8A5E] text-black font-black py-3 rounded-sm transition-all flex items-center justify-center gap-2 group shadow-xl uppercase text-xs"
                             >
                                 Connect to Lead Node <Server className="w-4 h-4 group-hover:scale-110 transition-transform" />
