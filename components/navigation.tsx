@@ -13,7 +13,7 @@ export default function Navigation() {
     { label: "Discord", href: "/discord", icon: "💬" },
     { label: "Sheets", href: "/google-sheets", icon: "📊" },
     { label: "Pricing", href: "/pricing", icon: "💰" },
-    { label: "Master", href: "/master", icon: "🔐" },
+    { label: "Master", href: "https://scantrade.vercel.app/master", icon: "🔐" },
   ]
 
   return (

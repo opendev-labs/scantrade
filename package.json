@@ -1,6 +1,7 @@
 {
   "name": "scantrade",
   "version": "0.1.0",
+  "homepage": "https://opendev-labs.github.io/scantrade",
   "private": true,
   "scripts": {
     "build": "next build",
