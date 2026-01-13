@@ -22,7 +22,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center">
           {/* Logo & Brand */}
           <div className="flex items-center gap-4">
-            <img src="/icon.svg" alt="Logo" className="w-9 h-9 rounded-md shadow-lg shadow-primary/20" />
+            <img src="https://scantrade.vercel.app/icon.svg" alt="Logo" className="w-9 h-9 rounded-md shadow-lg shadow-primary/20" />
             <div className="hidden sm:flex flex-col">
               <span className="font-bold text-sm leading-none">ScanTrade</span>
               <span className="text-xs text-muted-foreground">Simple Alerts</span>
